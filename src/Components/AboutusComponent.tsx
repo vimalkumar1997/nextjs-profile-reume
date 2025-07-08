@@ -65,7 +65,7 @@ const AboutusComponent = () => {
                              </Grid>
                             </Grid>
                             <Grid size={{md: 6}}>
-                                <img src="/images/profile-vimal.png" style={{width: "100%", marginTop: "-50px"}}/>
+                                <img src="images/profile-vimal.png" style={{width: "100%", marginTop: "-50px"}}/>
                             </Grid>
                         </Grid>
                        

@@ -10,17 +10,17 @@ const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
         items: 1,
-        slidesToSlide: 1, // optional, default to 1.
+        slidesToSlide: 1,
     },
     tablet: {
         breakpoint: { max: 1024, min: 768 },
         items: 1,
-        slidesToSlide: 1, // optional, default to 1.
+        slidesToSlide: 1,
     },
     mobile: {
         breakpoint: { max: 767, min: 464 },
         items: 1,
-        slidesToSlide: 1, // optional, default to 1.
+        slidesToSlide: 1,
     },
 };
 
@@ -35,26 +35,20 @@ interface BannerData {
 const BannerCarousel: React.FC = () => {
     const sliderImageUrl: BannerData[] = [
         {
-            url: "/images/profile-vimal.png",
+            // Use relative path without leading slash for GitHub Pages
+            url: "images/profile-vimal.png",
             common: "Hello!",
             stage: "I'm a",
             name: "Vimalkumar R",
             position: "Senior- React developer",
         },
         {
-            url: "/images/profile-vimal.png",
+            url: "images/profile-vimal.png",
             common: "Hello!",
             stage: "I'm a",
             name: "Vimalkumar R",
             position: "Senior- React developer",
         },
-        // {
-        //     url: "/images/profile-vimal.png",
-        //     common: "Hello!",
-        //     stage: "I'm a",
-        //     name: "Full Stack AI",
-        //     position: "Developer",
-        // }
     ];
 
     return (
@@ -78,7 +72,10 @@ const BannerCarousel: React.FC = () => {
                                     alt={`Profile image of ${imageUrl.name}`}
                                     width={500}
                                     height={500}
-                                    style={{ marginTop: "30px", width: "500px", height: "auto" }} 
+                                    style={{ marginTop: "30px", width: "500px", height: "auto" }}
+                                    // Add these props for GitHub Pages compatibility
+                                    unoptimized={true}
+                                    priority={index === 0}
                                 />
                                 <Box sx={{ flex: "1" }} />
                                 <Box sx={{ margin: "auto 0px" }}>
