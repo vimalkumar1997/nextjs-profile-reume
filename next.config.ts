@@ -3,7 +3,9 @@
  */
 const nextConfig = {
   output: 'export',
- 
+   images:{
+    unoptimized:true
+  },
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
  
@@ -15,3 +17,15 @@ const nextConfig = {
 }
  
 module.exports = nextConfig
+
+module.exports = {
+  async redirects(){
+    return [
+      {
+        source: '/',
+        destination:'/personal_profile',
+        permanent:true
+      }
+    ]
+  }
+}
