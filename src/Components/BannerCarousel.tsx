@@ -72,6 +72,7 @@ const BannerCarousel: React.FC = () => {
                                     alt={`Profile image of ${imageUrl.name}`}
                                     width={500}
                                     height={500}
+                                    className="mobile_image"
                                     style={{ marginTop: "30px", width: "500px", height: "auto" }}
                                     // Add these props for GitHub Pages compatibility
                                     unoptimized={true}
@@ -83,13 +84,13 @@ const BannerCarousel: React.FC = () => {
                                         <Typography variant="subtitle2" sx={{ my: 2 }} color="#ffbd39" style={{ fontWeight: "500", fontSize: "22px" }}>
                                             {imageUrl.common}
                                         </Typography>
-                                        <Typography variant="h3" sx={{ my: 2 }} color="#fff" style={{ fontWeight: "900" }}>
+                                        <Typography variant="h3" sx={{ my: 2 }} color="#fff" style={{ fontWeight: "900" }} className="mobilesizesmall">
                                             {imageUrl.stage}
                                         </Typography>
-                                        <Typography variant="h3" sx={{ my: 2 }} color="#ffbd39" style={{ fontWeight: "900" }}>
+                                        <Typography variant="h3" sx={{ my: 2 }} color="#ffbd39" style={{ fontWeight: "900" }} className="mobilesizesmall">
                                             {imageUrl.name}
                                         </Typography>
-                                        <Typography variant="h4" sx={{ my: 2 }} color="#fff" style={{ fontWeight: "700" }}>
+                                        <Typography variant="h4" sx={{ my: 2 }} color="#fff" style={{ fontWeight: "700" }} className="mobilesizesmall">
                                             {imageUrl.position}
                                         </Typography>
 

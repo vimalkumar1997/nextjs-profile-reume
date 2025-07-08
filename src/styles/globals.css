@@ -53,3 +53,13 @@ header {
     -ms-border-radius: 5px;
     border-radius: 5px;
 }
+
+@media screen and (min-width: 280px) and (max-width: 708px) {
+  .mobile_image{
+    display: none;
+  }
+  .mobilesizesmall{
+      font-size: 20px !important; 
+  }
+  
+}
