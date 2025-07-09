@@ -69,7 +69,7 @@ header {
 }
 @media screen and (min-width: 280px) and (max-width: 508px) {
   .slider{
-    height: 80vh !important;
+    height: 56vh !important;
   }
   .Mobile_text_slightly{
     padding-left: 60px !important
