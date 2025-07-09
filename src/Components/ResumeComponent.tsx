@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
-
+import PdfDownloadbtnComponent from "./PdfDownloadbtnComponent";
 // Define proper TypeScript interface for work experience
 interface WorkExperience {
     year: string;
@@ -72,7 +72,7 @@ const ResumeComponent: React.FC = () => {
                         ))}
                         <Grid size={{ md: 12 }}>
                             <Box sx={{ textAlign: "center" }}>
-                                <Button variant="contained" size="large" sx={{ backgroundColor: "#ffbd39", color: "#000", textAlign: "center" }}>Download CV</Button>
+                                <PdfDownloadbtnComponent/>
                             </Box>
                         </Grid>
                     </Grid>

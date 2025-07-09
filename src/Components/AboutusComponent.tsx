@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
+import PdfDownloadbtnComponent from "./PdfDownloadbtnComponent";
 const AboutusComponent = () => {
     return (
         <>
@@ -48,7 +48,7 @@ const AboutusComponent = () => {
                                         <Typography variant="subtitle1" color="#fff" style={{ fontWeight: 600 }}>Email:</Typography>
                                     </Grid>
                                     <Grid size={{md:8,sm:6,xs:6}}>
-                                        <Typography variant="subtitle1" color="#999">smartvimalkumar1997@gmail.com</Typography>
+                                        <Typography variant="subtitle1" color="#999" sx={{wordBreak: "break-all"}}>smartvimalkumar1997@gmail.com</Typography>
                                     </Grid>
                                     <Grid size={{md:4,sm:6, xs:6}}>
                                         <Typography variant="subtitle1" color="#fff" style={{ fontWeight: 600 }}>Phone:</Typography>
@@ -61,7 +61,7 @@ const AboutusComponent = () => {
                                  <Typography variant="subtitle1" color="#fff" style={{ fontWeight: 600,fontSize: "24px",marginTop: "20px" }}><span style={{color: "#ffbd39"}}>200</span> Project complete</Typography>
                             </Grid>
                              <Grid size={{md:12}}>
-                                <Button variant="contained" size="large" sx={{backgroundColor: "#ffbd39",color: "#000",margin: "20px 0px"}}>Download CV</Button>
+                               <PdfDownloadbtnComponent/>
                              </Grid>
                             </Grid>
                             <Grid size={{md: 6}}>

@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
+import PdfDownloadbtnComponent from "./PdfDownloadbtnComponent";
 
 import Slider from '@mui/material/Slider';
 interface Skill {
@@ -101,7 +101,7 @@ const MySkillsComponent = () => {
                     })}
                     <Grid size={{ md: 12 }}>
                         <Box sx={{ textAlign: "center" }}>
-                            <Button variant="contained" size="large" sx={{ backgroundColor: "#ffbd39", color: "#000", textAlign: "center" }}>Download CV</Button>
+                           <PdfDownloadbtnComponent/>
                         </Box>
                     </Grid>
                 </Grid>

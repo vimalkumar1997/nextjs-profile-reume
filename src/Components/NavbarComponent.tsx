@@ -37,8 +37,9 @@ export default function DrawerAppBar(props: Props) {
     };
 
     function handleNavbarClick(item: string) {
-        console.log(item);
+       setMobileOpen(false);
         setNavbarselect(item);
+       
     }
 
     const drawer = (
@@ -57,7 +58,7 @@ export default function DrawerAppBar(props: Props) {
                                 color: navbarselect === item ? "#ffbd39" : "#fff",
                             },
                         }}
-                            onClick={() => handleNavbarClick(item)}
+                           
                         >
                             <Link
                                 activeClass="active"
@@ -65,6 +66,7 @@ export default function DrawerAppBar(props: Props) {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
+                                 onClick={() => handleNavbarClick(item)}
                             >
                                 <ListItemText primary={item} />
                             </Link>
