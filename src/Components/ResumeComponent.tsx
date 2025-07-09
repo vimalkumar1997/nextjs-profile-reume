@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import PdfDownloadbtnComponent from "./PdfDownloadbtnComponent";
 // Define proper TypeScript interface for work experience
