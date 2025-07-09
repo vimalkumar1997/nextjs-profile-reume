@@ -51,6 +51,7 @@ const PdfDownloadbtnComponent = (
                     backgroundColor: "#e5a832"
                 }
             }}
+            className="buttonsize_small"
         >
             {isDownloading ? downloadingText : buttonText}
         </Button>
