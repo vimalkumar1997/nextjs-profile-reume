@@ -38,7 +38,7 @@ const ProjectsComponent = () => {
                                 <Typography variant="h3" color="#fff" style={{ fontWeight: 900, textShadow: "10px 30px #1a1a1a", borderTop: "5px dashed #ffbd39", width: "fit-content", }}>My Projects</Typography>
                             </Box>
                             <Box sx={{ width: "100%", float: "left", marginTop: "30px", }}>
-                                <Typography variant="subtitle1" color="#999">{`Below are my few of the projects and explanation.`}</Typography>
+                                <Typography variant="subtitle1" color="#999">Below are my few of the projects and explanation.</Typography>
                             </Box>
                         </Box>
                     </Box>
@@ -83,7 +83,7 @@ const ProjectsComponent = () => {
                     </Box>
                     <Box sx={{ position: "absolute", top: 40, width: "100%", textAlign: "center" }}>
                         <Box sx={{ width: "100%", textAlign: "center" }}>
-                            <Typography variant="h4" style={{ fontWeight: 900, }}><span style={{ color: "#fff" }}>I'm</span> <span style={{ color: "#ffbd39" }}> Open</span>  <span style={{ color: "#fff" }}>to work</span></Typography>
+                            <Typography variant="h4" style={{ fontWeight: 900, }}><span style={{ color: "#fff" }}>I&apos;m</span> <span style={{ color: "#ffbd39" }}> Open</span>  <span style={{ color: "#fff" }}>to work</span></Typography>
                         </Box>
                         <Button
                             variant="contained"
