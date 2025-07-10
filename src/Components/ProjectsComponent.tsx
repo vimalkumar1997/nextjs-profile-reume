@@ -60,7 +60,7 @@ const ProjectsComponent = () => {
                         </Grid>
                     </Box>
                 </Container>
-                <Box sx={{ position: "relative", }}>
+                <Box sx={{ position: "relative", width: "100%",float: "left"}}>
                     <Box sx={{ position: "relative", zIndex: -1 }}>
                         {/* <img src="images/project-banner-image.jpg" style={{ width: "100%", marginTop: "-100px" }} /> */}
 
@@ -70,19 +70,19 @@ const ProjectsComponent = () => {
                             width={500}
                             height={300}
                             style={{ width: "100%", marginTop: "-100px",height: "auto !important" }}
-
+                            className="projectmobile_content"
                             unoptimized={true}
                         />
-                        <Box sx={{ position: "absolute", top: 0, marginTop: "-100px", backgroundColor: "#000", width: "100%", height: "-webkit-fill-available", opacity: 0.7 }}>
+                        <Box  className="projectmobile_content"sx={{ position: "absolute", top: 0, marginTop: "-100px", backgroundColor: "#000", width: "100%", height: "-webkit-fill-available", opacity: 0.7 }}>
                         </Box>
                         {/* <Box sx={{ position: "absolute", top: 30, width: "100%", zIndex: 10 }}>
                            
 
                         </Box> */}
                     </Box>
-                    <Box sx={{ position: "absolute", top: 40, width: "100%", textAlign: "center" }}>
+                    <Box sx={{ position: "absolute", top: 40, width: "100%", textAlign: "center" }} className="projecttopchange">
                         <Box sx={{ width: "100%", textAlign: "center" }}>
-                            <Typography variant="h4" style={{ fontWeight: 900, }}><span style={{ color: "#fff" }}>I&apos;m</span> <span style={{ color: "#ffbd39" }}> Open</span>  <span style={{ color: "#fff" }}>to work</span></Typography>
+                            <Typography variant="h4" style={{ fontWeight: 900, }} className="projectopentowork"><span style={{ color: "#fff" }}>I&apos;m</span> <span style={{ color: "#ffbd39" }}> Open</span>  <span style={{ color: "#fff" }}>to work</span></Typography>
                         </Box>
                         <Button
                             variant="contained"
