@@ -53,6 +53,16 @@ header {
     -ms-border-radius: 5px;
     border-radius: 5px;
 }
+.projectback_rount{
+   width: 100%;
+    margin-bottom: 30px;
+    background: #1a1a1a;
+    padding: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
 
 @media screen and (min-width: 280px) and (max-width: 708px) {
   .mobile_image{

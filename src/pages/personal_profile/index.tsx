@@ -5,6 +5,7 @@ import BannerCarousel from "@/Components/BannerCarousel";
 import AboutusComponent from "@/Components/AboutusComponent";
 import ResumeComponent from "@/Components/ResumeComponent";
 import MySkillsComponent from "@/Components/MySkillsComponent";
+import ProjectsComponent from "@/Components/ProjectsComponent";
 export default function Home() {
 
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <AboutusComponent/>
         <ResumeComponent/>
         <MySkillsComponent/>
+        <ProjectsComponent/>
       </div>
     </>
   );
