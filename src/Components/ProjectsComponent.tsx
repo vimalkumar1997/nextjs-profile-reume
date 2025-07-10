@@ -69,8 +69,7 @@ const ProjectsComponent = () => {
                             alt={`Profile image of `}
                             width={500}
                             height={300}
-                            className="mobile_image"
-                            style={{ width: "100%", marginTop: "-100px" }}
+                            style={{ width: "100%", marginTop: "-100px",height: "auto !important" }}
 
                             unoptimized={true}
                         />
