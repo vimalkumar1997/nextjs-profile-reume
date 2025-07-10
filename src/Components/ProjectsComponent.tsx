@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import Image from 'next/image';
 interface Projects {
     experience: string;
     count: string;
@@ -48,7 +49,7 @@ const ProjectsComponent = () => {
                         <Grid container spacing={2}>
                             {projectData.map((ival, index) => {
                                 return (
-                                    <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+                                    <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                                         <Box className="projectback_rount" sx={{ cursor: ival.experience === "Awards" || ival.experience === "Courses completed" ? "pointer" : "unset" }}>
                                             <Typography variant="h4" color="#ffbd39" sx={{ fontWeight: 900, textAlign: "center" }}>{ival.count}</Typography>
                                             <Typography variant="subtitle1" color="#fff" mt={1} sx={{ textAlign: "center" }}>{ival.experience}</Typography>
@@ -61,7 +62,18 @@ const ProjectsComponent = () => {
                 </Container>
                 <Box sx={{ position: "relative", }}>
                     <Box sx={{ position: "relative", zIndex: -1 }}>
-                        <img src="images/project-banner-image.jpg" style={{ width: "100%", marginTop: "-100px" }} />
+                        {/* <img src="images/project-banner-image.jpg" style={{ width: "100%", marginTop: "-100px" }} /> */}
+
+                        <Image
+                            src={"images/project-banner-image.jpg"}
+                            alt={`Profile image of `}
+                            width={500}
+                            height={300}
+                            className="mobile_image"
+                            style={{ width: "100%", marginTop: "-100px" }}
+
+                            unoptimized={true}
+                        />
                         <Box sx={{ position: "absolute", top: 0, marginTop: "-100px", backgroundColor: "#000", width: "100%", height: "-webkit-fill-available", opacity: 0.7 }}>
                         </Box>
                         {/* <Box sx={{ position: "absolute", top: 30, width: "100%", zIndex: 10 }}>
@@ -69,10 +81,10 @@ const ProjectsComponent = () => {
 
                         </Box> */}
                     </Box>
-                    <Box sx={{ position: "absolute", top: 50,width: "100%", textAlign:"center" }}>
-                         <Box sx={{ width: "100%", textAlign: "center" }}>
-                                <Typography variant="h4" style={{ fontWeight: 900, }}><span style={{ color: "#fff" }}>I'm</span> <span style={{ color: "#ffbd39" }}> Open</span>  <span style={{ color: "#fff" }}>to work</span></Typography>
-                            </Box>
+                    <Box sx={{ position: "absolute", top: 40, width: "100%", textAlign: "center" }}>
+                        <Box sx={{ width: "100%", textAlign: "center" }}>
+                            <Typography variant="h4" style={{ fontWeight: 900, }}><span style={{ color: "#fff" }}>I'm</span> <span style={{ color: "#ffbd39" }}> Open</span>  <span style={{ color: "#fff" }}>to work</span></Typography>
+                        </Box>
                         <Button
                             variant="contained"
                             size="large"
