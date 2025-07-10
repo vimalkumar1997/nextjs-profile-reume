@@ -67,7 +67,7 @@ header {
 @media screen and (min-width: 280px) and (max-width: 708px) {
   .mobile_image{
    position: absolute;
-   height:80vh !important;
+   height:56vh !important;
    width: 350px !important;
    opacity: 0.4;
   }
