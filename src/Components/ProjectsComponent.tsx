@@ -44,6 +44,8 @@ const ProjectsComponent = () => {
                     </Box>
 
                 </Container>
+
+
                 <Container maxWidth="lg">
                     <Box mt={4}>
                         <Grid container spacing={2}>
@@ -60,27 +62,20 @@ const ProjectsComponent = () => {
                         </Grid>
                     </Box>
                 </Container>
-                <Box sx={{ position: "relative", width: "100%",float: "left"}}>
-                    <Box sx={{ position: "relative", zIndex: -1 }}>
-                        {/* <img src="images/project-banner-image.jpg" style={{ width: "100%", marginTop: "-100px" }} /> */}
+                <Box sx={{ position: "relative", width: "100%", float: "left" }}>
+                    <Image
+                        src={"images/project-banner-image.jpg"}
+                        alt={`Profile image of `}
+                        width={500}
+                        height={230}
+                        style={{ width: "100%",}}
+                        className="projectmobile_content"
+                        unoptimized={true}
+                    />
+                    <Box className="projectmobile_content" sx={{ position: "absolute", top: 0, backgroundColor: "#000", width: "100%", height: "-webkit-fill-available", opacity: 0.7 }}>
 
-                        <Image
-                            src={"images/project-banner-image.jpg"}
-                            alt={`Profile image of `}
-                            width={500}
-                            height={300}
-                            style={{ width: "100%", marginTop: "-100px",height: "auto !important" }}
-                            className="projectmobile_content"
-                            unoptimized={true}
-                        />
-                        <Box  className="projectmobile_content"sx={{ position: "absolute", top: 0, marginTop: "-100px", backgroundColor: "#000", width: "100%", height: "-webkit-fill-available", opacity: 0.7 }}>
-                        </Box>
-                        {/* <Box sx={{ position: "absolute", top: 30, width: "100%", zIndex: 10 }}>
-                           
-
-                        </Box> */}
                     </Box>
-                    <Box sx={{ position: "absolute", top: 40, width: "100%", textAlign: "center" }} className="projecttopchange">
+                    <Box sx={{ position: "absolute", bottom: 40, width: "100%", textAlign: "center" }} className="projecttopchange">
                         <Box sx={{ width: "100%", textAlign: "center" }}>
                             <Typography variant="h4" style={{ fontWeight: 900, }} className="projectopentowork"><span style={{ color: "#fff" }}>I&apos;m</span> <span style={{ color: "#ffbd39" }}> Open</span>  <span style={{ color: "#fff" }}>to work</span></Typography>
                         </Box>
@@ -100,6 +95,7 @@ const ProjectsComponent = () => {
                         >Go my personal projects</Button>
                     </Box>
                 </Box>
+                
 
             </Box>
 

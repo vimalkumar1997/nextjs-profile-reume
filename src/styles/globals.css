@@ -91,7 +91,9 @@ header {
     height: 30px;
   }
   .projectmobile_content {
-    margin: unset !important
+    margin: unset !important;
+    height:200px !important;
+   
   }
   .projecttopchange{
     top: 10px !important

@@ -55,7 +55,11 @@ const MySkillsComponent = () => {
             value: 50,
         },
         {
-            skill: "E commerce site create Front-end back-end created",
+            skill: "Figma",
+            value: 80,
+        },
+        {
+            skill: "Adobe xd",
             value: 80,
         },
     ]);

@@ -112,7 +112,7 @@ export default function DrawerAppBar(props: Props) {
                         </Typography>
                         <Box sx={{
                             display: {
-                                xs: 'none', sm: 'block',
+                                xs: 'none', sm: 'block',md: 'flex',
                                 '& .MuiButton-text': {
                                     textTransform: "capitalize !important",
                                 },
@@ -126,13 +126,14 @@ export default function DrawerAppBar(props: Props) {
                                     spy={true}
                                     smooth={true}
                                     duration={500}
+                                    style={{padding: "0px 10px"}}
                                 >
-                                    <Button sx={{
-                                        color: navbarselect === item ? "#ffbd39" : "#fff",
-                                        fontSize: "16px",
-                                    }} onClick={() => handleNavbarClick(item)}>
-                                        {item}
-                                    </Button>
+                                    
+                                        <ListItemText primary={item} />
+                                   
+                                    
+                                    {/* <ListItemText primary={item} /> */}
+                                
                                 </Link>
                             ))}
                         </Box>
