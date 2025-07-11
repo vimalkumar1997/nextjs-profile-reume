@@ -24,7 +24,7 @@ export default function Home() {
         <AboutusComponent/>
         <ResumeComponent/>
         <MySkillsComponent/>
-        <ProjectsComponent/>
+        {/* <ProjectsComponent/> */}
       </div>
     </>
   );
