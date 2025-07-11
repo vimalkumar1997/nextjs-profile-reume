@@ -68,7 +68,7 @@ header {
   .mobile_image{
    /* position: absolute; */
    height:100vh !important;
-   width: 350px !important;
+   width: 450px !important;
    opacity: 0.4;
    position: absolute;
   }
