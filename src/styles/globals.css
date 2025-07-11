@@ -66,20 +66,21 @@ header {
 
 @media screen and (min-width: 280px) and (max-width: 708px) {
   .mobile_image{
-   position: absolute;
-   height:56vh !important;
+   /* position: absolute; */
+   height:100vh !important;
    width: 350px !important;
    opacity: 0.4;
+   position: absolute;
   }
   .mobilesizesmall{
-      font-size: 20px !important; 
+      font-size: 30px !important; 
   }
 
   
 }
 @media screen and (min-width: 280px) and (max-width: 508px) {
   .slider{
-    height: 56vh !important;
+    height: 100vh !important;
   }
   .Mobile_text_slightly{
     padding-left: 60px !important
