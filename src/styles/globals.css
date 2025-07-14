@@ -22,6 +22,7 @@ a {
   text-decoration: none;
 }
 
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -42,7 +43,7 @@ header {
   padding: 10em 0 8em;
 }
 .react-multi-carousel-dot-list {display: none !important;}
-.active {color: #ffbd39 !important}
+.active {color: #c9f31d !important}
 .resume_experience_card{
   width: 100%;
     margin-bottom: 30px;

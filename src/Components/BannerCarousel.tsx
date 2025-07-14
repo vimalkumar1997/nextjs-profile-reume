@@ -52,7 +52,7 @@ const BannerCarousel: React.FC = () => {
 
     return (
         <>
-            <div className="parent" id="pageId0">
+            <Box className="parent" id="pageId0" sx={{ backgroundImage: `url(${"images/background-banner.png"})`, backgroundSize: "cover", backgroundPosition: "center", position: "relative" }}>
                 <Carousel
                     responsive={responsive}
                     autoPlay={true}
@@ -65,9 +65,9 @@ const BannerCarousel: React.FC = () => {
                 >
                     {sliderImageUrl.map((imageUrl: BannerData, index: number) => {
                         return (
-                            <Box className="slider" key={index} sx={{ height: "100vh", position: "relative", display: "flex" }}>
-                                <Image 
-                                    src={imageUrl.url} 
+                            <Box className="slider" key={index} sx={{ height: "100vh", position: "relative", display: "flex", }}>
+                                <Image
+                                    src={imageUrl.url}
                                     alt={`Profile image of ${imageUrl.name}`}
                                     width={500}
                                     height={500}
@@ -80,20 +80,20 @@ const BannerCarousel: React.FC = () => {
                                 <Box sx={{ flex: "1" }} />
                                 <Box sx={{ margin: "auto 0px" }}>
                                     <Box sx={{ padding: "33px", marginTop: "60px" }} className="Mobile_text_slightly">
-                                        <Typography variant="subtitle2" sx={{ my: 2 }} color="#ffbd39" style={{ fontWeight: "500", fontSize: "22px" }}>
+                                        <Typography variant="subtitle2" sx={{ my: 2 }} color="#c9f31d" style={{ fontWeight: "500", fontSize: "22px" }}>
                                             {imageUrl.common}
                                         </Typography>
                                         <Typography variant="h3" sx={{ my: 2 }} color="#fff" style={{ fontWeight: "900" }} className="mobilesizesmall">
                                             {imageUrl.stage}
                                         </Typography>
-                                        <Typography variant="h3" sx={{ my: 2 }} color="#ffbd39" style={{ fontWeight: "900" }} className="mobilesizesmall">
+                                        <Typography variant="h3" sx={{ my: 2 }} color="#c9f31d" style={{ fontWeight: "900" }} className="mobilesizesmall">
                                             {imageUrl.name}
                                         </Typography>
                                         <Typography variant="h4" sx={{ my: 2 }} color="#fff" style={{ fontWeight: "700" }} className="mobilesizesmall">
                                             {imageUrl.position}
                                         </Typography>
 
-                                        <PdfDownloadbtnComponent/>
+                                        <PdfDownloadbtnComponent />
                                     </Box>
                                 </Box>
                                 <Box sx={{ flex: "1" }} />
@@ -101,7 +101,8 @@ const BannerCarousel: React.FC = () => {
                         );
                     })}
                 </Carousel>
-            </div>
+               
+            </Box>
         </>
     );
 };

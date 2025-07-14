@@ -69,7 +69,7 @@ const MySkillsComponent = () => {
                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <Box sx={{ textAlign: "center" }}>
                         <Box sx={{ textAlign: "center", width: "100%", float: "left", display: "flex", justifyContent: "center" }}>
-                            <Typography variant="h3" color="#fff" style={{ fontWeight: 900, textShadow: "10px 30px #1a1a1a", borderTop: "5px dashed #ffbd39", width: "fit-content", }}>My Skills</Typography>
+                            <Typography variant="h3" color="#fff" style={{ fontWeight: 900, textShadow: "10px 30px #1a1a1a", borderTop: "5px dashed #c9f31d", width: "fit-content", }}>My Skills</Typography>
                         </Box>
                         <Box sx={{ width: "100%", float: "left", marginTop: "30px", }}>
                             <Typography variant="subtitle1" color="#999">{`Process engineering, Hyperautomation, Chatbots, React and Next js and Vitel js Developer, AI innovation`}</Typography>
@@ -81,7 +81,7 @@ const MySkillsComponent = () => {
                         return (
                             <Grid  key={index}size={{ md: 6, sm: 12, xs: 12 }} mt={3} sx={{
                                 "& .MuiSlider-colorPrimary": {
-                                    color: "#ffbd39 !important"
+                                    color: "#c9f31d !important"
                                 }
                             }}>
                                 <Box mr={2}>
@@ -97,7 +97,7 @@ const MySkillsComponent = () => {
                                         aria-label="medium"
                                         valueLabelDisplay="auto"
 
-                                    // color="#ffbd39"
+                                    // color="#c9f31d"
                                     />
                                 </Box>
                             </Grid>

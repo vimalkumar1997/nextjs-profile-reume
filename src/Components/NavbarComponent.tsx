@@ -54,7 +54,7 @@ export default function DrawerAppBar(props: Props) {
                             textAlign: 'center',
                             '& .MuiButton-text': {
                                 textTransform: "capitalize !important",
-                                color: navbarselect === item ? "#ffbd39" : "#fff",
+                                color: navbarselect === item ? "#c9f31d" : "#fff",
                             },
                         }}
                            

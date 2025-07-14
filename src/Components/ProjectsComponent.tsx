@@ -71,7 +71,7 @@ const ProjectsComponent = () => {
                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <Box sx={{ textAlign: "center" }}>
                             <Box sx={{ textAlign: "center", width: "100%", float: "left", display: "flex", justifyContent: "center" }}>
-                                <Typography variant="h3" color="#fff" style={{ fontWeight: 900, textShadow: "10px 30px #1a1a1a", borderTop: "5px dashed #ffbd39", width: "fit-content", }}>My Projects</Typography>
+                                <Typography variant="h3" color="#fff" style={{ fontWeight: 900, textShadow: "10px 30px #1a1a1a", borderTop: "5px dashed #c9f31d", width: "fit-content", }}>My Projects</Typography>
                             </Box>
                             <Box sx={{ width: "100%", float: "left", marginTop: "30px", }}>
                                 <Typography variant="subtitle1" color="#999"></Typography>
@@ -149,7 +149,7 @@ const ProjectsComponent = () => {
                                 return (
                                     <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                                         <Box className="projectback_rount" sx={{ cursor: ival.value === "awards" || ival.value === "courses_completed" ? "pointer" : "unset" }} onClick={ival.value === "awards" ? () => setOpen(true) : ival.value === "courses_completed" ? () => setcourseModal(true) : undefined}>
-                                            <Typography variant="h4" color="#ffbd39" sx={{ fontWeight: 900, textAlign: "center" }}>{ival.count}</Typography>
+                                            <Typography variant="h4" color="#c9f31d" sx={{ fontWeight: 900, textAlign: "center" }}>{ival.count}</Typography>
                                             <Typography variant="subtitle1" color="#fff" mt={1} sx={{ textAlign: "center" }}>{ival.experience}</Typography>
                                         </Box>
                                     </Grid>
@@ -173,13 +173,13 @@ const ProjectsComponent = () => {
                     </Box>
                     <Box sx={{ position: "absolute", bottom: 40, width: "100%", textAlign: "center" }} className="projecttopchange">
                         <Box sx={{ width: "100%", textAlign: "center" }}>
-                            <Typography variant="h4" style={{ fontWeight: 900, }} className="projectopentowork"><span style={{ color: "#fff" }}>I&apos;m</span> <span style={{ color: "#ffbd39" }}> Open</span>  <span style={{ color: "#fff" }}>to work</span></Typography>
+                            <Typography variant="h4" style={{ fontWeight: 900, }} className="projectopentowork"><span style={{ color: "#fff" }}>I&apos;m</span> <span style={{ color: "#c9f31d" }}> Open</span>  <span style={{ color: "#fff" }}>to work</span></Typography>
                         </Box>
                         <Button
                             variant="contained"
                             size="large"
                             sx={{
-                                backgroundColor: "#ffbf39",
+                                backgroundColor: "#c9f31d",
                                 color: "#000",
                                 margin: "20px 0px",
                                 cursor: "pointer",

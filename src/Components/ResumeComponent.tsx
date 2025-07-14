@@ -41,7 +41,7 @@ const ResumeComponent: React.FC = () => {
                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <Box sx={{ textAlign: "center" }}>
                         <Box sx={{ textAlign: "center", width: "100%", float: "left", display: "flex", justifyContent: "center" }}>
-                            <Typography variant="h3" color="#fff" style={{ fontWeight: 900, textShadow: "10px 30px #1a1a1a", borderTop: "5px dashed #ffbd39", width: "fit-content" }}>Resume</Typography>
+                            <Typography variant="h3" color="#fff" style={{ fontWeight: 900, textShadow: "10px 30px #1a1a1a", borderTop: "5px dashed #c9f31d", width: "fit-content" }}>Resume</Typography>
                         </Box>
                         <Box sx={{ width: "100%", float: "left", marginTop: "30px" }}>
                             <Typography variant="subtitle1" color="#999">Hi, I have over 5.6 years of experience in front-end development. I have worked on and handled a variety of projects ranging from mid-level to high-level complexity. I also have hands-on experience working on AI-based projects.</Typography>
@@ -59,7 +59,7 @@ const ResumeComponent: React.FC = () => {
                         {workingData.map((workItem: WorkExperience, index: number) => (
                             <Grid size={{ md: 6, sm: 12, xs: 12 }} key={index}>
                                 <Box className="resume_experience_card">
-                                    <Typography variant="h4" color="#ffbd39" style={{ fontWeight: 900 }}>{workItem.year}</Typography>
+                                    <Typography variant="h4" color="#c9f31d" style={{ fontWeight: 900 }}>{workItem.year}</Typography>
                                     <Typography variant="h5" color="#fff" mt={1}>{workItem.position}</Typography>
                                     <Box sx={{ display: "flex", alignItems: "center" }} mt={1}>
                                         <BusinessCenterIcon sx={{ color: "#999", fontSize: "18px" }} />
