@@ -43,7 +43,7 @@ export default function DrawerAppBar(props: Props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
+            <Typography variant="h6" sx={{ my: 2,color: "#fff", }}>
                 <b>VIMALKUMAR R</b>
             </Typography>
             <Divider />
@@ -52,6 +52,7 @@ export default function DrawerAppBar(props: Props) {
                     <ListItem key={item} disablePadding>
                         <ListItemButton sx={{
                             textAlign: 'center',
+                            color: "#fff",
                             '& .MuiButton-text': {
                                 textTransform: "capitalize !important",
                                 color: navbarselect === item ? "#c9f31d" : "#fff",
@@ -150,7 +151,7 @@ export default function DrawerAppBar(props: Props) {
                     }}
                     sx={{
                         display: { xs: 'block', sm: 'none' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth,backgroundColor: "#000" },
                     }}
                 >
                     {drawer}

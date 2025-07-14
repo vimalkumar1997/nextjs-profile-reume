@@ -184,7 +184,7 @@ const ProjectsComponent = () => {
                                 margin: "20px 0px",
                                 cursor: "pointer",
                                 '&:hover': {
-                                    backgroundColor: "#e5a832"
+                                    backgroundColor: "#c9f31d"
                                 }
                             }}
                             className="buttonsize_small"
