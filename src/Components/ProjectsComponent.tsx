@@ -16,7 +16,7 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 800,
+    width: "auto",
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
@@ -26,7 +26,7 @@ const styleModal={
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 500,
+    width: "auto",
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
@@ -109,7 +109,7 @@ const ProjectsComponent = () => {
                                         alt={`Profile image of `}
                                         width={500}
                                         height={230}
-                                        style={{ width: "395px", height: "400px" }}
+                                        style={{ width: "400px", height: "400px" }}
                                         className="projectmobile_content_awards"
                                         unoptimized={true}
                                     />
