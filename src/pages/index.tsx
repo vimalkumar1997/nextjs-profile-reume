@@ -6,6 +6,7 @@ import AboutusComponent from "@/Components/AboutusComponent";
 import ResumeComponent from "@/Components/ResumeComponent";
 import MySkillsComponent from "@/Components/MySkillsComponent";
 import ProjectsComponent from "@/Components/ProjectsComponent";
+import ChatBotCustomer from "@/Components/ChatBotCustomer";
 export default function Home() {
 
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <ResumeComponent/>
         <MySkillsComponent/>
         <ProjectsComponent/>
+        <ChatBotCustomer/>
       </div>
     </>
   );
