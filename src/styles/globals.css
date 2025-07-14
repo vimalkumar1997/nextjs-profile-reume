@@ -72,6 +72,14 @@ header {
    opacity: 0.4;
    position: absolute;
   }
+  .certificate_mobile {
+    display: unset !important;
+  }
+  .projectmobile_content_awards {
+    width: 100% !important;
+    height: auto !important;
+  }
+
   .mobilesizesmall{
       font-size: 30px !important; 
   }

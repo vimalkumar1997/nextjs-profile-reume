@@ -5,29 +5,65 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Image from 'next/image';
+import Modal from '@mui/material/Modal';
 interface Projects {
     experience: string;
     count: string;
+    value: string;
 }
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 800,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+};
+const styleModal={
+      position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 500,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+}
+
 const ProjectsComponent = () => {
     const [projectData] = useState<Projects[]>([
         {
-            experience: "Awards",
+            experience: "Awards click",
             count: "2",
+            value: "awards",
         },
         {
             experience: "Complete projects",
             count: "223",
+            value: "complete_projects",
         },
         {
             experience: "Happy customers",
             count: "478",
+            value: "happy_customers"
         },
         {
-            experience: "Courses completed",
+            experience: "Courses completed click",
             count: "1",
+            value: "courses_completed"
         }
     ])
+    const [open, setOpen] = useState<boolean>(false);
+    const [courseModal, setcourseModal] = useState<boolean>(false);
+
+    function handleClose() {
+        setOpen(false)
+    }
+    function handleCloseModal() {
+        setcourseModal(false);
+    }
     return (
         <>
             <Box sx={{ width: "100%", float: "left", padding: "70px 0px 60px 0px", }} id={"pageId4"}>
@@ -38,13 +74,73 @@ const ProjectsComponent = () => {
                                 <Typography variant="h3" color="#fff" style={{ fontWeight: 900, textShadow: "10px 30px #1a1a1a", borderTop: "5px dashed #ffbd39", width: "fit-content", }}>My Projects</Typography>
                             </Box>
                             <Box sx={{ width: "100%", float: "left", marginTop: "30px", }}>
-                                <Typography variant="subtitle1" color="#999">Below are my few of the projects and explanation.</Typography>
+                                <Typography variant="subtitle1" color="#999"></Typography>
                             </Box>
                         </Box>
                     </Box>
 
                 </Container>
+                <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                    className="mobilemodel"
+                >
+                    <>
+                        <Box sx={style} className="mobileshowCertification">
+                            {/* <Box
+                                sx={{ display: "flex" }} className="certificate_mobile"> */}
+                            <Grid container>
+                                <Grid size={{ xs: 12, sm: 6, md: 6 }}>
+                                    <Image
+                                        src={"images/sportlight1.png"}
+                                        alt={`Profile image of `}
+                                        width={500}
+                                        height={430}
+                                        style={{ width: "400px", height: "400px" }}
+                                        className="projectmobile_content_awards"
+                                        unoptimized={true}
+                                    />
+                                </Grid>
+                                <Grid size={{ xs: 12, sm: 6, md: 6 }}>
+                                    <Image
+                                        src={"images/sportlight2.jpg"}
+                                        alt={`Profile image of `}
+                                        width={500}
+                                        height={230}
+                                        style={{ width: "395px", height: "400px" }}
+                                        className="projectmobile_content_awards"
+                                        unoptimized={true}
+                                    />
+                                </Grid>
+                            </Grid>
 
+                        </Box>
+                    </>
+
+                </Modal>
+
+                <Modal
+                    open={courseModal}
+                    onClose={handleCloseModal}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                    className="mobilemodel"
+                >
+                    <Box sx={styleModal} className="mobileshowCertification">
+                        <Image
+                            src={"images/course_completion.png"}
+                            alt={`Profile image of `}
+                            width={500}
+                            height={430}
+                            style={{ width: "400px", height: "400px" }}
+                            className="projectmobile_content_awards"
+                            unoptimized={true}
+                        />
+                    </Box>
+
+                </Modal>
 
                 <Container maxWidth="lg">
                     <Box mt={4}>
@@ -52,7 +148,7 @@ const ProjectsComponent = () => {
                             {projectData.map((ival, index) => {
                                 return (
                                     <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
-                                        <Box className="projectback_rount" sx={{ cursor: ival.experience === "Awards" || ival.experience === "Courses completed" ? "pointer" : "unset" }}>
+                                        <Box className="projectback_rount" sx={{ cursor: ival.value === "awards" || ival.value === "courses_completed" ? "pointer" : "unset" }} onClick={ival.value === "awards" ? () => setOpen(true) : ival.value === "courses_completed" ? () => setcourseModal(true) : undefined}>
                                             <Typography variant="h4" color="#ffbd39" sx={{ fontWeight: 900, textAlign: "center" }}>{ival.count}</Typography>
                                             <Typography variant="subtitle1" color="#fff" mt={1} sx={{ textAlign: "center" }}>{ival.experience}</Typography>
                                         </Box>
@@ -68,7 +164,7 @@ const ProjectsComponent = () => {
                         alt={`Profile image of `}
                         width={500}
                         height={230}
-                        style={{ width: "100%",}}
+                        style={{ width: "100%", }}
                         className="projectmobile_content"
                         unoptimized={true}
                     />
@@ -95,7 +191,7 @@ const ProjectsComponent = () => {
                         >Go my personal projects</Button>
                     </Box>
                 </Box>
-                
+
 
             </Box>
 
