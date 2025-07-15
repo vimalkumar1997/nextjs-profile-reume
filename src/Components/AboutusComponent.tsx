@@ -16,7 +16,7 @@ const AboutusComponent = () => {
                                 <Box>
                                     <Typography variant="h3" color="#fff" style={{ fontWeight: 900, textShadow: "10px 30px #1a1a1a",borderTop: "5px dashed #c9f31d",width:"fit-content" }}>About Me</Typography>
                                     <Box sx={{ padding: "30px 0px" }}>
-                                        <Typography variant="subtitle1" color="#999">{`Currently, I Senior react developer initiatives at foundever, specializing in AI-powered application, chatbots, and predictive analytics. My expertise spans building Generative AI applications and deploying custom LLM solutions tailored to business needs.`}</Typography>
+                                        <Typography variant="subtitle1" color="#999">{`Currently, I Senior react developer initiatives at foundever, specializing in AI-powered application, chatbots, and predictive analytics. My expertise spans building Generative AI applications.`}</Typography>
                                     </Box>
                                 </Box>
                                 <Grid container spacing={2}>

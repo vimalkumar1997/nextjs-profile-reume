@@ -91,6 +91,12 @@ header {
   .slider{
     height: 100vh !important;
   }
+  .chatbot-container {
+    width: 100% !important;
+  }
+  .chatbot-mobile-container{
+    right: 0 !important;
+  }
   .Mobile_text_slightly{
     padding-left: 60px !important
   }
@@ -109,5 +115,8 @@ header {
   }
   .projectopentowork {
     font-size: 18px !important;
+  }
+  .projectmobile_content_img{
+    height:114px;
   }
 }

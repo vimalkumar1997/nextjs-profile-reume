@@ -165,7 +165,7 @@ const ProjectsComponent = () => {
                         width={500}
                         height={230}
                         style={{ width: "100%", }}
-                        className="projectmobile_content"
+                        className="projectmobile_content_img"
                         unoptimized={true}
                     />
                     <Box className="projectmobile_content" sx={{ position: "absolute", top: 0, backgroundColor: "#000", width: "100%", height: "-webkit-fill-available", opacity: 0.7 }}>
