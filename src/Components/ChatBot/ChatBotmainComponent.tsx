@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, CSSProperties } from 'react';
-import { Send, Bot, User, Info, CircleX } from 'lucide-react';
+import {Bot, User, Info, CircleX } from 'lucide-react';
 import PdfDownloadResume from "./PdfDownloadResume";
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
