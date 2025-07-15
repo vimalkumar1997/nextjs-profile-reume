@@ -121,4 +121,7 @@ header {
   .projectmobile_content_img{
     height:114px;
   }
+  .hidethisData_mobile{
+    display:none !important;
+  }
 }
