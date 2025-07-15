@@ -257,7 +257,7 @@ const ChatBotmainComponent: React.FC<ChatBotmainComponentProps> = ({ setIsChatOp
                             style={styles.textInput}
                             disabled={conversationStage === 'goodbye'}
                         />
-                        <button
+                        {/* <button
                             onClick={handleSendMessage}
                             disabled={!inputValue.trim() || conversationStage === 'goodbye'}
                             style={{
@@ -267,7 +267,7 @@ const ChatBotmainComponent: React.FC<ChatBotmainComponentProps> = ({ setIsChatOp
                             }}
                         >
                             <Send size={20} />
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </div>
@@ -418,7 +418,8 @@ const styles: StylesType = {
     inputArea: {
         backgroundColor: '#333',
         borderTop: '1px solid #e0e0e0',
-        padding: '16px'
+        padding: '16px',
+        width: "100%",
     },
     inputContainer: {
         display: 'flex',
