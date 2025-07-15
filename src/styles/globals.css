@@ -92,10 +92,12 @@ header {
     height: 100vh !important;
   }
   .chatbot-container {
-    width: 100% !important;
+    /* width: 100% !important; */
   }
   .chatbot-mobile-container{
     right: 0 !important;
+    bottom:0 !important;
+    top: 0 !important
   }
   .Mobile_text_slightly{
     padding-left: 60px !important
