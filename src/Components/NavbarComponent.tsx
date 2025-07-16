@@ -113,7 +113,7 @@ export default function DrawerAppBar(props: Props) {
                         </Typography>
                         <Box sx={{
                             display: {
-                                xs: 'none', sm: 'block',md: 'flex',
+                                xs: 'none', sm: 'flex',md: 'flex',
                                 '& .MuiButton-text': {
                                     textTransform: "capitalize !important",
                                 },
