@@ -64,7 +64,7 @@ const MySkillsComponent = () => {
         },
     ]);
     return (
-        <Box sx={{ width: "100%", float: "left", padding: "80px 0px 60px 0px", }} id={"pageId3"}>
+        <Box sx={{ width: "100%", float: "left", padding: "80px 0px 0px 0px", }} id={"pageId3"}>
             <Container maxWidth="md">
                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <Box sx={{ textAlign: "center" }}>

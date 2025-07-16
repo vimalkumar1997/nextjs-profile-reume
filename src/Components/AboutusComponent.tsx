@@ -16,7 +16,8 @@ const AboutusComponent = () => {
                                 <Box>
                                     <Typography variant="h3" color="#fff" style={{ fontWeight: 900, textShadow: "10px 30px #1a1a1a",borderTop: "5px dashed #c9f31d",width:"fit-content" }}>About Me</Typography>
                                     <Box sx={{ padding: "30px 0px" }}>
-                                        <Typography variant="subtitle1" color="#999">{`Currently, I Senior react developer initiatives at foundever, specializing in AI-powered application, chatbots, and predictive analytics. My expertise spans building Generative AI applications.`}</Typography>
+                                        <Typography variant="subtitle1" color="#999">{`I am a detail-oriented and passionate React Developer with over 5.5 years of experiencebuilding responsive web applications using modern JavaScript (ES6+), TypeScript,React.js, Redux, and REST APIs. I am adept at writing clean, scalable code andcollaborating effectively in agile environments. I have a proven ability to transform UI/UXdesigns into high-quality, functional code.
+Throughout my career, I have developed scalable and performant web applications usingReact.js, Redux, and Next.js.`}</Typography>
                                     </Box>
                                 </Box>
                                 <Grid container spacing={2}>
@@ -58,14 +59,14 @@ const AboutusComponent = () => {
                                     </Grid>
                                 </Grid>
                                 <Grid size={{md:12}}>
-                                 <Typography variant="subtitle1" color="#fff" style={{ fontWeight: 600,fontSize: "24px",marginTop: "20px" }}><span style={{color: "#c9f31d"}}>200</span> Project complete</Typography>
+                                 <Typography variant="subtitle1" color="#fff" style={{ fontWeight: 600,fontSize: "20px",marginTop: "20px" }}><span style={{color: "#c9f31d"}}>200+</span> Project complete</Typography>
                             </Grid>
                              <Grid size={{md:12}}>
                                <PdfDownloadbtnComponent/>
                              </Grid>
                             </Grid>
                             <Grid size={{md: 6}}>
-                                <img src="images/profile-vimal.png" style={{width: "100%", marginTop: "-50px"}}/>
+                                <img src="images/profile-vimal.png" style={{width: "100%", marginTop: "-10px"}}/>
                             </Grid>
                         </Grid>
                        
