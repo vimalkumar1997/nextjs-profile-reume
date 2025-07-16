@@ -69,12 +69,10 @@ const ResumeComponent: React.FC = () => {
                                 </Box>
                             </Grid>
                         ))}
-                        <Grid size={{ md: 12 }}>
-                            <Box sx={{ textAlign: "center" }}>
-                                <PdfDownloadbtnComponent/>
-                            </Box>
-                        </Grid>
                     </Grid>
+                    <Box sx={{ textAlign: "center" }}>
+                        <PdfDownloadbtnComponent />
+                    </Box>
                 </Box>
             </Container>
         </Box>

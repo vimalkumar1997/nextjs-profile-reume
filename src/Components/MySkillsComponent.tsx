@@ -7,9 +7,9 @@ import PdfDownloadbtnComponent from "./PdfDownloadbtnComponent";
 
 import Slider from '@mui/material/Slider';
 interface Skill {
-  skill: string;
-  value: number;
-  // Add other properties as needed
+    skill: string;
+    value: number;
+    // Add other properties as needed
 }
 
 const MySkillsComponent = () => {
@@ -79,7 +79,7 @@ const MySkillsComponent = () => {
                 <Grid container spacing={2}>
                     {skillsdata.map((ival, index) => {
                         return (
-                            <Grid  key={index}size={{ md: 6, sm: 12, xs: 12 }} mt={3} sx={{
+                            <Grid key={index} size={{ md: 6, sm: 12, xs: 12 }} mt={3} sx={{
                                 "& .MuiSlider-colorPrimary": {
                                     color: "#c9f31d !important"
                                 }
@@ -103,12 +103,10 @@ const MySkillsComponent = () => {
                             </Grid>
                         )
                     })}
-                    <Grid size={{ md: 12 }}>
-                        <Box sx={{ textAlign: "center" }}>
-                           <PdfDownloadbtnComponent/>
-                        </Box>
-                    </Grid>
                 </Grid>
+                <Box sx={{ textAlign: "center" }}>
+                    <PdfDownloadbtnComponent />
+                </Box>
             </Container>
 
 

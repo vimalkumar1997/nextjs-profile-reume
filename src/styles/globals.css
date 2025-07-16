@@ -227,9 +227,12 @@ header {
   }
 
   .Mobile_text_slightly {
-    padding-left: 60px !important
+    padding-left: 60px !important;
+    text-align: center !important;
   }
-
+.pdfbutton_mobilealignment {
+  text-align: center !important;
+}
   .buttonsize_small {
     font-size: 11px !important;
     width: auto;
@@ -238,8 +241,6 @@ header {
 
   .projectmobile_content {
     margin: unset !important;
-    height: 200px !important;
-
   }
 
   .projecttopchange {

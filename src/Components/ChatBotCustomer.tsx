@@ -14,14 +14,13 @@ const ChatBotCustomer: React.FC<ChatBotCustomerProps> = ({ isChatOpen,setIsChatO
 
         <>
 
-            <Box sx={{ position: "relative" }}>
+            <Box>
 
 
                 <Box
                     sx={{ position: "fixed", bottom: 20, right: 20, width: "50px", height: "50px", backgroundColor: "#c9f31d", borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center", cursor: "pointer" }}
                     onClick={() => {if (setIsChatOpen) setIsChatOpen(!isChatOpen);}}
                 >
-
                     <MessageCircle  />
                 </Box>
                 {isChatOpen?(
