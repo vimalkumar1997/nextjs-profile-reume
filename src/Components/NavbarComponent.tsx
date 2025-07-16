@@ -52,6 +52,7 @@ export default function DrawerAppBar(props: Props) {
                     <ListItem key={item} disablePadding>
                         <ListItemButton sx={{
                             textAlign: 'center',
+                            cursor: "pointer",
                             color: "#fff",
                             '& .MuiButton-text': {
                                 textTransform: "capitalize !important",
@@ -126,7 +127,7 @@ export default function DrawerAppBar(props: Props) {
                                     spy={true}
                                     smooth={true}
                                     duration={500}
-                                    style={{padding: "0px 10px"}}
+                                    style={{padding: "0px 10px", cursor: "pointer",}}
                                 >
                                     
                                         <ListItemText primary={item} />

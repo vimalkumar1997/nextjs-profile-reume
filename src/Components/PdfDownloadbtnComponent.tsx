@@ -5,7 +5,7 @@ const PdfDownloadbtnComponent = (
     {
         pdfUrl = 'files/vimalkumar-resume.pdf',
         fileName = 'resume.pdf',
-        buttonText = 'Download PDF',
+        buttonText = 'Download Resume',
         downloadingText = 'Downloading...'
     }
 ) => {
@@ -47,6 +47,7 @@ const PdfDownloadbtnComponent = (
                 backgroundColor: "#c9f31d", 
                 color: "#000", 
                 margin: "20px 0px",
+                fontWeight: 700,
                 '&:hover': {
                     backgroundColor: "#c9f31d"
                 }

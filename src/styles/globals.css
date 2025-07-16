@@ -231,9 +231,9 @@ header {
   }
 
   .buttonsize_small {
-    font-size: 10px !important;
+    font-size: 11px !important;
     width: auto;
-    height: 30px;
+    /* height: 30px; */
   }
 
   .projectmobile_content {

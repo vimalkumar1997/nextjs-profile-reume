@@ -19,7 +19,7 @@ interface PdfDownloadbtnComponentProps {
 const PdfDownloadbtnComponent: React.FC<PdfDownloadbtnComponentProps> = ({
   pdfUrl = 'files/vimalkumar-resume.pdf',
   fileName = 'resume.pdf',
-  buttonText = 'Download PDF',
+  buttonText = 'Download Resume',
   downloadingText = 'Downloading...',
   addMessage,
   setShowAboutChip,

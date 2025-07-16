@@ -183,6 +183,7 @@ const ProjectsComponent = () => {
                                 color: "#000",
                                 margin: "20px 0px",
                                 cursor: "pointer",
+                                fontWeight:700,
                                 '&:hover': {
                                     backgroundColor: "#c9f31d"
                                 }
