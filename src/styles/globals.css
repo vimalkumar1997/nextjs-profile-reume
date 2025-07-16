@@ -241,6 +241,8 @@ header {
 
   .projectmobile_content {
     margin: unset !important;
+    height: 130px !important;
+
   }
 
   .projecttopchange {
