@@ -138,11 +138,12 @@ const ChatBotmainComponent: React.FC<ChatBotmainComponentProps> = ({ setIsChatOp
                         width={40}
                         height={40}
                         style={{ borderRadius: '50%', backgroundColor: '#000' }}
+                        className={"profile-image-chatbot"}
                         unoptimized={true}
                     />
                     <Box sx={{ position: "relative" }}>
                         <h1 style={styles.headerTitle}>Vimal Agent</h1>
-                        <Typography variant="subtitle1" sx={{ fontSize: "12px", color: "#333", marginLeft: '8px' }}>Please use my chatbot to inquire about my professional background</Typography>
+                        <Typography variant="subtitle1" sx={{ fontSize: "11px", color: "#333", marginLeft: '8px' }} className={"pleaseuseMobilechat"}>Please use my chatbot to inquire about my professional background</Typography>
                         <Box sx={{ position: "absolute", top: 0, right: 10 }}  onClick={() => {if (setIsChatOpen) setIsChatOpen(false);}}>
                             <CircleX
                                 style={{ cursor: 'pointer', color: '#000' }}

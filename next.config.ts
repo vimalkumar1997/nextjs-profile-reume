@@ -29,3 +29,6 @@ module.exports = {
     ]
   }
 }
+module.exports = {
+  devIndicators: false 
+}

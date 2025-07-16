@@ -1,8 +1,8 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import SmartToyIcon from '@mui/icons-material/SmartToy';
-import ChatBotmainComponent from "./ChatBot/ChatBotmainComponent";
 
+import ChatBotmainComponent from "./ChatBot/ChatBotmainComponent";
+import { MessageCircle } from 'lucide-react';
 // const ChatBotCustomer = () => {
 interface ChatBotCustomerProps {
     isChatOpen:boolean
@@ -22,7 +22,7 @@ const ChatBotCustomer: React.FC<ChatBotCustomerProps> = ({ isChatOpen,setIsChatO
                     onClick={() => {if (setIsChatOpen) setIsChatOpen(!isChatOpen);}}
                 >
 
-                    <SmartToyIcon sx={{ fontSize: "40px" }} />
+                    <MessageCircle  />
                 </Box>
                 {isChatOpen?(
                 <Box sx={{ position: "fixed", bottom: 0, right: 80, zIndex: 10002 }} className="chatbot-mobile-container">
