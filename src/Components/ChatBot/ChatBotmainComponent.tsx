@@ -87,7 +87,7 @@ const ChatBotmainComponent: React.FC<ChatBotmainComponentProps> = ({ setIsChatOp
         setShowAboutChip(false);
         setShowResumeChip(false);
         setTimeout(() => {
-            addMessage("Currently, I'm a Senior React developer at Foundever, specializing in AI-powered applications, chatbots, and predictive analytics. My expertise spans building Generative AI applications.", false, true);
+            addMessage("I am a detail-oriented and passionate React Developer with over 5.5 years of experiencebuilding responsive web applications using modern JavaScript (ES6+), TypeScript,React.js, Redux, and REST APIs. I am adept at writing clean, scalable code andcollaborating effectively in agile environments. I have a proven ability to transform UI/UXdesigns into high-quality, functional code. Throughout my career, I have developed scalable and performant web applications usingReact.js, Redux, and Next.js.", false, true);
             setShowEndChatChip(true);
             setConversationStage('about_clicked');
         }, 800);

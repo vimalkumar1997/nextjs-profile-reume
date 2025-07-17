@@ -273,8 +273,8 @@ const ProjectsComponent = () => {
                     </Box>
                 </Container>
 
-                <Box sx={{ position: "relative", width: "100%", float: "left" }}>
-                    <Image
+                <Box sx={{ position: "relative", width: "100%", float: "left", backgroundImage: `url(${"images/project-banner-image.jpg"})`, backgroundSize: "cover", backgroundPosition: "center",  backgroundAttachment:"fixed",height:"230px" }} className="ImagefixedMobilesizechange">
+                    {/* <Image
                         src={"images/project-banner-image.jpg"}
                         alt={`Profile image of `}
                         width={500}
@@ -282,7 +282,7 @@ const ProjectsComponent = () => {
                         style={{ width: "100%"}}
                         className="projectmobile_content_img"
                         unoptimized={true}
-                    />
+                    /> */}
                     <Box className="projectmobile_content" sx={{ position: "absolute", top: 0, backgroundColor: "#000", width: "100%", height: "-webkit-fill-available", opacity: 0.7 }}>
                     </Box>
                     <Box sx={{ position: "absolute", bottom: 40, width: "100%", textAlign: "center" }} className="projecttopchange">

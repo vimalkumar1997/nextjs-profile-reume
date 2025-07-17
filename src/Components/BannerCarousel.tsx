@@ -52,7 +52,7 @@ const BannerCarousel: React.FC = () => {
 
     return (
         <>
-            <Box className="parent" id="pageId0" sx={{ backgroundImage: `url(${"images/background-banner.png"})`, backgroundSize: "cover", backgroundPosition: "center", position: "relative" }}>
+            <Box className="parent" id="pageId0" sx={{ backgroundImage: `url(${"images/background-banner.png"})`, backgroundSize: "cover", backgroundPosition: "center", position: "relative", backgroundAttachment:"fixed" }}>
                 <Carousel
                     responsive={responsive}
                     autoPlay={true}

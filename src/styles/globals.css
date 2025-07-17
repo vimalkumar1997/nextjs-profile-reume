@@ -244,7 +244,15 @@ header {
     height: 130px !important;
 
   }
-
+  .ImagefixedMobilesizechange{
+     height: 120px!important;
+  }
+  .contact-profile-remove-mobile {
+    display:none !important;
+  }
+.parent_mobile{
+  height: auto !important
+}
   .projecttopchange {
     top: 10px !important
   }
