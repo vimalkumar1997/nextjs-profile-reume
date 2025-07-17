@@ -9,6 +9,7 @@ import ProjectsComponent from "@/Components/ProjectsComponent";
 import ChatBotCustomer from "@/Components/ChatBotCustomer";
 import ContactMeComponent from "@/Components/ContactMeComponent"
 import Box from '@mui/material/Box';
+import FooterComponent from "@/Components/FooterComponent";
 export default function Home() {
    const [isChatOpen, setIsChatOpen] = useState<boolean>(false);
   return (
@@ -30,6 +31,7 @@ export default function Home() {
           <MySkillsComponent/>
           <ProjectsComponent/>
           <ContactMeComponent/>
+          <FooterComponent/>
         </Box>
           <ChatBotCustomer isChatOpen={isChatOpen} setIsChatOpen={setIsChatOpen}/>
       </div>
