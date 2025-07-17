@@ -250,6 +250,10 @@ header {
   .contact-profile-remove-mobile {
     display:none !important;
   }
+  .mobileroundchange-contact {
+    width: 80px !important;
+    height: 80px !important;
+  }
 .parent_mobile{
   height: auto !important
 }

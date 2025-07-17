@@ -49,8 +49,8 @@ const ContactMeComponent = () => {
                         return (
                             <>
 
-                                <Grid size={{ xs: 6, sm: 3, md: 3 }} sx={{ display: "flex", justifyContent: "center" }} mt={3}>
-                                    <Box key={index} sx={{ display: "flex", justifyContent: "center", alignItems: "center", width: "120px", height: "120px", borderRadius: "50%", backgroundColor: "#ffffff1a" }}>
+                                <Grid size={{ xs: 4, sm: 3, md: 3 }} sx={{ display: "flex", justifyContent: "center" }} mt={3}>
+                                    <Box key={index} sx={{ display: "flex", justifyContent: "center", alignItems: "center", width: "120px", height: "120px", borderRadius: "50%", backgroundColor: "#ffffff1a" }} className="mobileroundchange-contact">
                                         {index === 0 && <MapPin style={{ color: "#c9f31d", }} size={30} />}
                                         {index === 1 && <Phone style={{ color: "#c9f31d", }} size={30} />}
                                         {index === 2 && <Rocket style={{ color: "#c9f31d", }} size={30} />}
@@ -58,7 +58,7 @@ const ContactMeComponent = () => {
                                         {/* <MapPin style={{color: "#c9f31d",}} size={30}/> */}
                                     </Box>
                                 </Grid>
-                                <Grid size={{ xs: 6, sm: 3, md: 3 }} sx={{ margin: "auto" }}>
+                                <Grid size={{ xs: 8, sm: 3, md: 3 }} sx={{ margin: "auto" }}>
                                     <Box key={index} sx={{}}>
                                         <Typography variant="h5" color="#c9f31d" style={{ fontWeight: 600, marginTop: "20px" }}>{item.header}</Typography>
                                         <Typography variant="subtitle1" color="#fff" style={{ fontWeight: 400, marginTop: "10px", wordBreak: "break-all" }}>{item.para}</Typography>
