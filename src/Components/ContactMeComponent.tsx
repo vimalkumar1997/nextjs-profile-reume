@@ -108,7 +108,7 @@ const ContactMeComponent = () => {
                         {/* <Box className="parent_mobile" sx={{ backgroundColor: `#fff`, backgroundSize: "cover", backgroundPosition: "center", position: "relative", backgroundAttachment: "fixed", height: "100vh" }}>
 
                         </Box> */}
-                        <Box p={8}>
+                        <Box p={5}>
                             <TextField id="outlined-basic" label="Your Name" variant="outlined" sx={{ width: "100%", marginTop: "20px", }} />
                             <TextField id="outlined-basic" label="Your Email" variant="outlined" sx={{ width: "100%", marginTop: "20px", }} />
                             <TextField id="outlined-basic" label="Subject" variant="outlined" sx={{ width: "100%", marginTop: "20px", }} />
