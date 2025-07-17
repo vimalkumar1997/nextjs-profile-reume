@@ -1,6 +1,25 @@
 import "@/styles/globals.css";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 import type { AppProps } from "next/app";
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#c9f31d', // Red color
+      light: '#ffcdd2',
+      dark: '#d32f2f',
+      contrastText: '#ffffff',
+    },
+    // Optional: You can also customize secondary color
+  },
+});
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
+  );
 }

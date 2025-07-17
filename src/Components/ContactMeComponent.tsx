@@ -4,6 +4,11 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { MapPin, Phone, Rocket, Earth } from 'lucide-react';
 import Container from '@mui/material/Container';
+import TextField from '@mui/material/TextField';
+
+import Button from '@mui/material/Button';
+import { TextareaAutosize } from '@mui/material';
+import { styled } from '@mui/material/styles';
 interface ContactMe {
     header: string;
 
@@ -30,7 +35,31 @@ const ContactMeComponent = () => {
             para: "https://vimalkumar1997.github.io/nextjs-profile-reume/"
         },
 
-    ])
+    ]);
+
+    const StyledTextarea = styled(TextareaAutosize)(({ theme }) => ({
+        backgroundColor: 'transparent', // No background color
+        border: `1px solid #0000003b`, // Red border using theme
+        borderRadius: '4px',
+        padding: '8px 12px',
+        fontSize: '14px',
+        fontFamily: 'inherit',
+        resize: 'vertical',
+        outline: 'none',
+        color: "#000",
+        '&:focus': {
+            borderColor: "#c9f31d", // Darker red on focus
+            boxShadow: `0 0 0 2px ${theme.palette.primary.main}25`, // Subtle red glow
+        },
+
+        '&::placeholder': {
+            color: theme.palette.text.secondary,
+            opacity: 0.7,
+        },
+    }));
+
+    // Alternative: Direct inline styles
+
     return (
         <Box sx={{ width: "100%", float: "left", padding: "80px 0px 0px 0px", }} id={"pageId5"}>
             <Container maxWidth="lg">
@@ -71,13 +100,40 @@ const ContactMeComponent = () => {
 
                 <Grid container mt={4}>
                     <Grid size={{ xs: 6, sm: 6, md: 6 }} className="contact-profile-remove-mobile">
-                        <Box className="parent" sx={{ backgroundImage: `url(${"images/background-profileimage.jpg"})`, backgroundSize: "cover", backgroundPosition: "center", position: "relative", backgroundAttachment: "fixed" }}>
-                            <img src="images/profile-vimal.png" style={{ width: "100%", height: "100vh" }} />
+                        <Box className="parent" sx={{ backgroundImage: `url(${"images/background-profileimage.jpg"})`, backgroundSize: "cover", backgroundPosition: "center", position: "relative", backgroundAttachment: "fixed", height: "100vh" }}>
+                            <img src="images/profile-vimal.png" style={{ width: "fit-content", height: "fit-content", position: "absolute", bottom: 0, }} />
                         </Box>
                     </Grid>
-                    <Grid size={{ xs: 12, sm: 6, md: 6 }}>
-                        <Box className="parent_mobile" sx={{ backgroundColor: `#fff`, backgroundSize: "cover", backgroundPosition: "center", position: "relative", backgroundAttachment: "fixed", height: "100vh" }}>
+                    <Grid size={{ xs: 12, sm: 6, md: 6 }} sx={{ backgroundColor: "#fff", }}>
+                        {/* <Box className="parent_mobile" sx={{ backgroundColor: `#fff`, backgroundSize: "cover", backgroundPosition: "center", position: "relative", backgroundAttachment: "fixed", height: "100vh" }}>
 
+                        </Box> */}
+                        <Box p={8}>
+                            <TextField id="outlined-basic" label="Your Name" variant="outlined" sx={{ width: "100%", marginTop: "20px", }} />
+                            <TextField id="outlined-basic" label="Your Email" variant="outlined" sx={{ width: "100%", marginTop: "20px", }} />
+                            <TextField id="outlined-basic" label="Subject" variant="outlined" sx={{ width: "100%", marginTop: "20px", }} />
+                            <StyledTextarea
+                                minRows={5}
+                                placeholder="Message"
+                                style={{ width: '100%', marginTop: '20px' }}
+                            />
+                            <Button
+                                variant="contained"
+                                size="large"
+                                sx={{
+                                    backgroundColor: "#c9f31d",
+                                    color: "#000",
+                                    margin: "20px 0px",
+                                    cursor: "pointer",
+                                    fontWeight: 700,
+                                    '&:hover': {
+                                        backgroundColor: "#c9f31d"
+                                    }
+                                }}
+                                className="buttonsize_small"
+                            >
+                                Send Message
+                            </Button>
                         </Box>
                     </Grid>
                 </Grid>
