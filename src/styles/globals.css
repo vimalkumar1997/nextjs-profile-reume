@@ -246,6 +246,7 @@ header {
   }
   .ImagefixedMobilesizechange{
      height: 120px!important;
+     background-attachment: unset !important;
   }
   .contact-profile-remove-mobile {
     display:none !important;
@@ -256,6 +257,9 @@ header {
   }
 .parent_mobile{
   height: auto !important
+}
+.parent {
+  background-attachment: unset !important;
 }
   .projecttopchange {
     top: 10px !important
