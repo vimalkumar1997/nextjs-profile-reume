@@ -6,8 +6,6 @@ import { MapPin, Phone, Rocket, Earth } from 'lucide-react';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { TextareaAutosize } from '@mui/material';
-import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
