@@ -192,7 +192,7 @@ const ProjectsComponent = () => {
 
     return (
         <>
-            <Box sx={{ width: "100%", float: "left", padding: "100px 0px 0px 0px", }} id={"pageId4"}>
+             <Box sx={{ width: "100%", float: "left", padding: "100px 0px 0px 0px", }} id={"pageId4"}>
                 <Container maxWidth="md">
                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <Box sx={{ textAlign: "center" }}>
