@@ -40,11 +40,15 @@ const MySkillsComponent = () => {
         },
         {
             skill: "Python",
-            value: 40,
+            value: 70,
+        },
+        {
+            skill: "Adobe xd",
+            value: 65,
         },
         {
             skill: "post gress SQL",
-            value: 40,
+            value: 100,
         },
         {
             skill: "Front end",
@@ -58,10 +62,7 @@ const MySkillsComponent = () => {
             skill: "Figma",
             value: 80,
         },
-        {
-            skill: "Adobe xd",
-            value: 80,
-        },
+        
     ]);
     return (
         <Box sx={{ width: "100%", float: "left", padding: "80px 0px 0px 0px", }} id={"pageId3"}>

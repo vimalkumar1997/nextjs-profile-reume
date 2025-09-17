@@ -39,14 +39,14 @@ const BannerCarousel: React.FC = () => {
             common: "Hello!",
             stage: "I'm a",
             name: "Vimalkumar R",
-            position: "Senior- React developer",
+            position: "Senior-Full Stack developer",
         },
         {
             url: "images/profile-vimal.png",
             common: "Hello!",
             stage: "I'm a",
             name: "Vimalkumar R",
-            position: "Senior- React developer",
+            position: "Senior-Full Stack developer",
         },
     ];
 
