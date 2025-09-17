@@ -19,7 +19,7 @@ const ResumeComponent: React.FC = () => {
             year: "Jun 2022 - Present",
             position: "Senior React Developer",
             company: "Foundever",
-            explanation: "Building AI-integrated applications for chat and customer service, Built React-based dashboards to visualize sentiment trends, agent performance, and alerts for negative interactions. Developed an intelligent system to analyze sentiment at key stages of customer-agent calls — the beginning, middle, and end — to assess overall call quality and customer satisfaction.",
+            explanation: "Specialized in building AI-integrated applications tailored for chat and customerservice platforms, improving customer engagement and operational efficiency. Builtan intelligent system to analyze sentiment across key call phases (beginning, middle,and end), enabling comprehensive assessment of call quality and customersatisfaction. Designed and implemented automation workflows to streamline callcenter operations, significantly enhancing customer service across multiple industries.Architected robust backend service using Python, integrating seamlessly with AI andanalytics modules. Utilized PostgreSQL for structured data storage, including calllogs, sentiment scores, agent metrics, and customer feedback, ensuring efficientquerying and scalability. Delivered scalable, modular solutions supporting rapidintegration with existing CRM and support platforms.",
         },
         {
             year: "Jun 2021 - Jun 2022",
